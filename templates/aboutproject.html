@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <style>
+        img{
+
+          top: 10;
+          left: 0;
+
+          max-width: 70%;
+          max-height: 50%;
+        }
+
+        #mainDiv{
+            margin:30px 50px 30px 50px;
+        }
+
+     </style>
+    {% include 'partials/_headerlinks.html' %}
+</head>
+<body>
+{% load static %}
+{% include 'partials/_navbar.html' %}
+<div id="mainDiv">
+    <div>
+        <h3><u><font color="green" >Python based Project – Image Caption Generator with CNN (Convolution Neural Network) & LSTM (Long Short Term Memory) : -</font></u></h3>
+    </div>
+    <div><p>The objective of our project is to learn the concepts of a CNN and LSTM model and build a working model of Image caption generator by implementing CNN with LSTM.
+
+    In this Python project, we will be implementing the caption generator using CNN (Convolutional Neural Networks) and LSTM (Long short term memory). The image features will be extracted from Xception which is a CNN model trained on the imagenet dataset and then we feed the features into the LSTM model which will be responsible for generating the image captions.</p></div>
+    <div>
+        {% load static %}
+        <center>
+            <img src="{% static 'images/ann.png' %}" alt="My image"/>
+        </center>
+    </div>
+    <div>
+        <H2><u><font color="green">Some Glimpses Of Our Project :-</font></u></H2>
+        <center>
+            <img src="{% static 'images/out1.png' %}" alt="My image1"/>
+        </center>
+        <br>
+        <center>
+            <img src="{% static 'images/out3.png' %}" alt="My image2"/>
+        </center>
+    </div>
+</div>
+</body>
+</html>

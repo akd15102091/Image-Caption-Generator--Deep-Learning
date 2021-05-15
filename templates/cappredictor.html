@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   {% include 'partials/_headerlinks.html' %}
+    {% load static %}
+     <style type="text/css">
+
+
+                .center {
+                  padding: 70px 0;
+                  border: 3px solid gray;
+                  text-align: center;
+                  height:500px;
+                  width:900px;
+                  border-radius:50px;
+             }
+              #labelimg{
+                border: none ;
+                padding: 0.4rem 1.2rem;
+                font-size: 1.4rem;
+                border-radius: 2rem;
+                text-transform: uppercase;
+                box-shadow: 0 8px 6px -6px #000;
+                outline: none;
+                height: 8;
+                width: "40px";
+                background-color:gray;
+            }
+
+            #subbtn{
+                border: none ;
+                padding: 0.2rem 0.8rem;
+                font-size: 1.0rem;
+                border-radius: 0.8rem;
+                text-transform: uppercase;
+                box-shadow: 0 8px 6px -6px #000;
+                outline: none;
+                height: 8;
+                width: "40px";
+                background-color:aqua;
+        }
+
+        #labelimg:hover{
+            box-shadow: 0 8px 6px -6px var(--main-color);
+        }
+    </style>
+</head>
+<body>
+{% load static %}
+{% include 'partials/_navbar.html' %}
+
+<br><br>
+<div class="container center" >
+    <form action="\predictCaption" method='POST'  enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file"  accept="image/*" name="file" id="image"  onchange="loadFile(event)" style="display: none;">
+        <p><label for="image" id="labelimg" style="cursor: pointer;">Upload Image</label></p>
+        <p><img id="output" style="max-height:200px" width="400" /></p><br>
+
+        {% load static %}
+        {% if imgurl %}
+          <img src='{{imgurl}}' alt="connect" width="400" style="max-height:200px">
+        {% endif %}
+        <br>
+        <input type="submit" id="subbtn" value="Predict Caption">
+    </form>
+</div>
+<div>
+    <br>
+    <center><font color="black"><h2>{{predictedcap}}</h2></font></center>
+    <br><br>
+</div>
+
+<script>
+var loadFile = function(event) {
+    var image = document.getElementById('output');
+    var h1tag = document.getElementById('h1tag');
+    image.src = URL.createObjectURL(event.target.files[0]);
+};
+</script>
+</body>
+</html>

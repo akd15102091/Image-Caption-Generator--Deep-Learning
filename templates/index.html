@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    img{
+      position: fixed;
+  top: 10;
+  left: 0;
+
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  max-height: 90%;
+    }
+  </style>
+    {% include 'partials/_headerlinks.html' %}
+<body>
+{% load static %}
+{% include 'partials/_navbar.html' %}
+<img src="{% static 'images/homeImg.jpg' %}" alt="My image"/>
+
+
+</body>
+</html>
