@@ -22,7 +22,7 @@ Tools used :
 
 Framework used :
 
-    1) Django (for frontend)
+    1) Django 
 
 
 
