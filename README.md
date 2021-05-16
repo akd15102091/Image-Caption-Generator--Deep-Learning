@@ -86,7 +86,7 @@ What is **Image-Caption-Generator** :
         b) then predict the caption using our model.
         
         
- **At last, using Dgango framework build the front end and integrate our model in frontend.  (Frontend + Backend)**
+ **At last, using Django framework build the front end and integrate our model in frontend.  (Frontend + Backend)**
  
  **Now our project is completely ready.**
  
