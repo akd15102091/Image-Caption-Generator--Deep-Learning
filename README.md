@@ -46,7 +46,7 @@ What is **Image-Caption-Generator** :
                 (ii) Flicker8k_text, this folder contains txt file. Flickr8k.token.txt file contains captions for these 8K+ images and five captions given for one image . Flickr_8k.trainImages.txt file contains ids of 6000 images for training model. 
                 
 
-**2) Data Preprocessing :- **
+**2) Data Preprocessing :-**
 
     a) First of all read the file "Flickr8k.token.txt" and create a dictonary in which key is the image name and value is a list that contains 5 captions for that image.
     
@@ -90,6 +90,7 @@ What is **Image-Caption-Generator** :
  
  **Now our project is completely ready.**
  
+ -----------------------------------------------------------------------------------------------------
  
  **Some Glimpses of our project :-** 
  
@@ -99,7 +100,7 @@ What is **Image-Caption-Generator** :
 
 ![a3](https://user-images.githubusercontent.com/61588604/118388614-313bd180-b643-11eb-87eb-4b509efe615a.png)
 
-
+-------------------------------------------------------------------------------------------------------
 **Some glimpses of our predictor :-**
 
 ![out1](https://user-images.githubusercontent.com/61588604/118388673-81b32f00-b643-11eb-84f2-df5bffd28bbd.png)
