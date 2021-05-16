@@ -103,6 +103,8 @@ What is **Image-Caption-Generator** :
 -------------------------------------------------------------------------------------------------------
 **Some glimpses of our predictor :-**
 
+![output](https://user-images.githubusercontent.com/61588604/118403007-0f197200-b68a-11eb-98fa-46a047ec824c.png)
+
 ![out1](https://user-images.githubusercontent.com/61588604/118388673-81b32f00-b643-11eb-84f2-df5bffd28bbd.png)
 
 ![out3](https://user-images.githubusercontent.com/61588604/118388674-837cf280-b643-11eb-8579-6a8ebabd64da.png)
