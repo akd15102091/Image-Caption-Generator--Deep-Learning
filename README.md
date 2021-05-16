@@ -81,7 +81,7 @@ What is **Image-Caption-Generator** :
     
  **4) Prediction :-**
     
-        a) first of all read the image for testing and create 2048 feature usinf Xception model and generate token for that.
+        a) first of all read the image for testing and create 2048 feature using Xception model and generate token for that.
         
         b) then predict the caption using our model.
         
